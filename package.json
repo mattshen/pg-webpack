@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bundle": "./node_modules/.bin/webpack ./entry.js bundle.js"
+    "build": "./node_modules/.bin/webpack --config webpack.config.js"
   },
   "keywords": [
     "webpack"
@@ -14,5 +14,8 @@
   "license": "MIT",
   "devDependencies": {
     "webpack": "^3.3.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
   }
 }

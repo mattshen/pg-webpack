@@ -1,1 +1,2 @@
-documment.write("It Works.");
+require("./style.css");
+document.write(require("./content.js"));
