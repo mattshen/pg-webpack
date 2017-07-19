@@ -4,11 +4,15 @@
   "description": "Webpack Play Ground",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "./node_modules/.bin/webpack ./entry.js bundle.js"
   },
   "keywords": [
     "webpack"
   ],
   "author": "Matt Shen <lovelywib@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.3.0"
+  }
 }
