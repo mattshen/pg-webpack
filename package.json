@@ -2,11 +2,13 @@
   "name": "pg-webpack",
   "version": "1.0.0",
   "description": "Webpack Play Ground",
-  "main": "index.js",
+  "main": "webpack.config.js",
   "scripts": {
     "tree": "tree src dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/webpack --config webpack.config.js"
+    "build": "./node_modules/.bin/webpack",
+    "watch": "./node_modules/.bin/webpack --watch",
+    "start": "webpack-dev-server --open"
   },
   "keywords": [
     "webpack"
@@ -21,6 +23,7 @@
     "html-webpack-plugin": "^2.29.0",
     "style-loader": "^0.18.2",
     "webpack": "^3.3.0",
+    "webpack-dev-server": "^2.5.1",
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
